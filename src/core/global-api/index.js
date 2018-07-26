@@ -31,7 +31,7 @@ export function initGlobalAPI (Vue: GlobalAPI) {
   Object.defineProperty(Vue, 'config', configDef)
 
   // exposed util methods.
-  // NOTE: these are not considered part of the public API - avoid relying on
+  // NOTE: these are not considered part of the public API - avoid relying on id:6
   // them unless you are aware of the risk.
   Vue.util = {
     warn,
