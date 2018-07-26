@@ -101,7 +101,7 @@ export interface ComponentOptions<
   parent?: Vue;
   mixins?: (ComponentOptions<Vue> | typeof Vue)[];
   name?: string;
-  // TODO: support properly inferred 'extends'
+  // TODO: support properly inferred 'extends' id:7
   extends?: ComponentOptions<Vue> | typeof Vue;
   delimiters?: [string, string];
   comments?: boolean;

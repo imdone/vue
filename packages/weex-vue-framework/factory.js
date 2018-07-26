@@ -4205,7 +4205,7 @@ function updateVirtualComponent (vnode) {
   }
   vm._vnode = vnode;
   if (vm._isMounted && componentId) {
-    // TODO: data should be filtered and without bindings
+    // TODO: data should be filtered and without bindings id:5
     var data = Object.assign({}, vm._data);
     updateComponentData(componentId, data, function () {
       callHook(vm, 'updated');
@@ -4225,7 +4225,7 @@ function resolveVirtualComponent (vnode) {
     beforeCreate: function beforeCreate () {
       // const vm: Component = this
 
-      // TODO: listen on all events and dispatch them to the
+      // TODO: listen on all events and dispatch them to the id:12
       // corresponding virtual components according to the componentId.
       // vm._virtualComponents = {}
       var createVirtualComponent = function (componentId, propsData) {
@@ -5212,7 +5212,7 @@ function initGlobalAPI (Vue) {
   Object.defineProperty(Vue, 'config', configDef);
 
   // exposed util methods.
-  // NOTE: these are not considered part of the public API - avoid relying on
+  // NOTE: these are not considered part of the public API - avoid relying on id:9
   // them unless you are aware of the risk.
   Vue.util = {
     warn: warn,
@@ -7295,7 +7295,7 @@ var TransitionGroup = {
       prevChildren.forEach(function (c) {
         c.data.transition = transitionData;
 
-        // TODO: record before patch positions
+        // TODO: record before patch positions id:15
 
         if (map[c.key]) {
           kept.push(c);
@@ -7329,7 +7329,7 @@ var TransitionGroup = {
       return
     }
 
-    // TODO: finish implementing move animations once
+    // TODO: finish implementing move animations once id:2
     // we have access to sync getComponentRect()
 
     // children.forEach(callPendingCbs)

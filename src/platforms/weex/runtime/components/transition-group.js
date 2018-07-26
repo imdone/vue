@@ -60,7 +60,7 @@ export default {
       prevChildren.forEach(c => {
         c.data.transition = transitionData
 
-        // TODO: record before patch positions
+        // TODO: record before patch positions id:13
 
         if (map[c.key]) {
           kept.push(c)
@@ -94,7 +94,7 @@ export default {
       return
     }
 
-    // TODO: finish implementing move animations once
+    // TODO: finish implementing move animations once id:10
     // we have access to sync getComponentRect()
 
     // children.forEach(callPendingCbs)
