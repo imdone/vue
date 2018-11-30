@@ -56,8 +56,11 @@ var MemoryStats = function (){
 	}
 
 	// TODO , add a sanity check to see if values are bucketed. id:0
-	// If so, remind user to adopt the --enable-precise-memory-info flag.
-	// open -a "/Applications/Google Chrome.app" --args --enable-precise-memory-info
+ // If so, remind user to adopt the --enable-precise-memory-info flag.
+ // open -a "/Applications/Google Chrome.app" --args --enable-precise-memory-info
+ //   
+ // ----
+ // https://github.com/imdone/vue/issues/1
 
 	var lastTime	= Date.now();
 	var lastUsedHeap= perf.memory.usedJSHeapSize;
